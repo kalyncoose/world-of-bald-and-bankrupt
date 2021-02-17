@@ -1,67 +1,77 @@
 <template>
   <div id="map">
     <vl-map style="height:100vh;position:absolute;" :load-tiles-while-animating="true" :load-tiles-while-interacting="true"
-            data-projection="EPSG:4326" @singleclick="i++, clickCoord = $event.coordinate">
+            data-projection="EPSG:4326" @click="handleClick($event.coordinate)">
 
       <vl-view :zoom.sync="zoom" :center.sync="center" :rotation.sync="rotation"></vl-view>
 
-      <vl-overlay v-if="clickCoord" :key="i" :position="clickCoord" style="padding: 10px">
-        <v-card
-            elevation="2"
-            outlined
-            shaped
-            style="max-width:562px;"
-        >
+      <vl-interaction-select>
+        <vl-overlay
+            v-for="point in this.points.filter(result => result.visible === true)"
+            :key="point.id"
+            :id="point.id"
+            :position="pointOnSurface(point.geometry)"
+            :auto-pan="true"
+            :offset="[-20,-20]"
+            :auto-pan-animation="{ duration: 300 }"
+            style="padding: 10px">
 
-          <v-card-title>
-            Solo In Estonia's East
-          </v-card-title>
+            <v-card
+                elevation="2"
+                outlined
+                shaped
+                style="max-width:562px;">
 
-          <v-card-subtitle>
-            14 February 2021
-          </v-card-subtitle>
+              <v-card-title>
+                Solo In Estonia's East
+              </v-card-title>
 
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/1ltZR9IWXaE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <v-card-subtitle>
+                14 February 2021
+              </v-card-subtitle>
 
-          <v-card-actions>
-            <v-btn
-                color="red"
-                text
-                @click="clickCoord = undefined"
-            >
-              Close
-            </v-btn>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/1ltZR9IWXaE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-            <v-spacer></v-spacer>
+              <v-card-actions>
+                <v-btn
+                    color="red"
+                    text
+                    @click="point.visible = false"
+                >
+                  Close
+                </v-btn>
 
-            <v-btn
-                icon
-                @click="show = !show"
-            >
-              <v-icon>{{ show ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
-            </v-btn>
-          </v-card-actions>
+                <v-spacer></v-spacer>
 
-          <v-expand-transition>
-            <div v-show="show">
-              <v-divider></v-divider>
+                <v-btn
+                    icon
+                    @click="show = !show"
+                >
+                  <v-icon>{{ show ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
+                </v-btn>
+              </v-card-actions>
 
-              <v-card-text style="overflow-wrap:normal">
-                🇪🇪 We all know about Tallinn the vibrant capital of Estonia with its tech start-ups and modern infrastructure. It's lauded as a miracle of the post-Soviet sphere and rightly so. But what about the rest of the country? Is that reaping the benefits of EU accession too? I jumped on a train heading east to find out...
-              </v-card-text>
-            </div>
-          </v-expand-transition>
-        </v-card>
+              <v-expand-transition>
+                <div v-show="show">
+                  <v-divider></v-divider>
 
-      </vl-overlay>
+                  <v-card-text style="overflow-wrap:normal">
+                    🇪🇪 We all know about Tallinn the vibrant capital of Estonia with its tech start-ups and modern infrastructure. It's lauded as a miracle of the post-Soviet sphere and rightly so. But what about the rest of the country? Is that reaping the benefits of EU accession too? I jumped on a train heading east to find out...
+                  </v-card-text>
+                </div>
+              </v-expand-transition>
+            </v-card>
 
-      <vl-feature v-for="point in points" :key="point.pointID">
-        <vl-geom-point :coordinates="[point.lat, point.long]"></vl-geom-point>
+        </vl-overlay>
+      </vl-interaction-select>
+
+      <vl-feature v-for="point in points" :key="point.id">
+        <vl-geom-point :coordinates="[point.geometry.coordinates[1], point.geometry.coordinates[0]]"></vl-geom-point>
         <vl-style-box>
           <vl-style-icon
               :src="markerOutlined"
               :scale="0.2"
-              :anchor="[0.5, 1]"
+              :anchor="[1,1]"
           ></vl-style-icon>
         </vl-style-box>
       </vl-feature>
@@ -75,6 +85,7 @@
 </template>
 
 <script>
+import { findPointOnSurface } from 'vuelayers/lib/ol-ext'
 
 export default {
   name: 'Map',
@@ -90,11 +101,42 @@ export default {
       marker: 'https://i.ibb.co/fnV6t3t/bald-marker.png',
       markerOutlined: 'https://i.ibb.co/1GvXSnX/bald-marker-outlined.png',
       points: [
-        { id: 1,
-          lat: 0,
-          long: 0
-        },
-      ]
+        { id: 1, visible: true, geometry: { type: 'Point', coordinates: [0,0] } },
+        { id: 2, visible: false, geometry: { type: 'Point', coordinates: [1,1] } },
+        { id: 3, visible: false, geometry: { type: 'Point', coordinates: [2,2] } },
+        { id: 4, visible: false, geometry: { type: 'Point', coordinates: [3,3] } },
+      ],
+      selectedFeatures: []
+    }
+  },
+  methods: {
+    pointOnSurface: findPointOnSurface,
+
+    handleClick(givenCoord) {
+      this.clickCoord = givenCoord
+      //console.log(this.clickCoord)
+      var givenLat = givenCoord[1]
+      var givenLong = givenCoord[0]
+
+      for (let i = 0; i < this.points.length; i++) {
+        var point = this.points[i]
+        var lat = point.geometry.coordinates[0]
+        var long = point.geometry.coordinates[1]
+
+        if (this.checkCloseCoord(givenLat, givenLong, lat, long)) {
+          this.points[i].visible = true
+        }
+      }
+    },
+
+    checkCloseCoord(lat1, long1, lat2, long2) {
+      var resultLat = Math.abs(lat1-lat2)
+      var resultLong = Math.abs(long1-long2)
+
+      if (resultLat <= 0.5 && resultLong <= 0.5)
+        return true
+
+      return false
     }
   },
 }
