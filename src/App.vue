@@ -8,7 +8,7 @@
     >
       <span style="margin-right:5px;">Made with</span>
       <v-icon style="color:red;">mdi-heart</v-icon>
-      <span style="margin-left:5px;">by <u>Kalyn Coose</u></span>
+      <span style="margin-left:5px;">by <u>Kalyn</u></span>
     </v-system-bar>
 
     <v-system-bar
