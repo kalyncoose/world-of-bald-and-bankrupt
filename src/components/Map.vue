@@ -10,10 +10,9 @@
             v-for="marker in this.markers.filter(m => m.visible != false)"
             :key="marker.snippet.position"
             :id="marker.snippet.position"
-            :position="pointOnSurface(marker.geometry)"
+            :position="pointOnSurface({ type: 'Point', coordinates:[marker.geometry.coordinates[1],marker.geometry.coordinates[0]]})"
             :auto-pan="true"
             :offset="[-20,-20]"
-            :auto-pan-animation="{ duration: 300 }"
             style="padding: 10px">
 
           <v-card
@@ -111,7 +110,7 @@ export default {
 
       //DEBUG ONLY
       //console.log(this.markers)
-      //console.log(this.clickCoord)
+      console.log(this.clickCoord)
       //console.log(this.zoom)
 
       var givenLat = givenCoord[1]
@@ -176,9 +175,9 @@ export default {
           if (this.markers[i].visible == true)
             return false
         }
+        console.log('lat: ' + resultLat + ' long: ' + resultLong);
         return true
       }
-
       return false
     },
   },
