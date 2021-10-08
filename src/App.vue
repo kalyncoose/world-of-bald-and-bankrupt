@@ -15,6 +15,7 @@
         dark
         color="dark"
         style="z-index:999;bottom:0;right:0;position:fixed;opacity:70%;"
+        v-show="$vuetify.breakpoint.mdAndUp"
     >
       <span style="margin-right:5px;">Using</span>
       <v-icon>mdi-wrench</v-icon>
@@ -49,7 +50,7 @@
           ></v-img>
         </v-list-item-avatar>
 
-        <v-list-item-content>
+        <v-list-item-content v-show="$vuetify.breakpoint.mdAndUp">
           <v-list-item-title><b>bald and bankrupt</b></v-list-item-title>
         </v-list-item-content>
       </v-list-item>

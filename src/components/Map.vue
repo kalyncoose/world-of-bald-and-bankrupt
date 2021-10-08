@@ -16,6 +16,7 @@
             style="padding: 10px">
 
           <v-card
+              v-show="$vuetify.breakpoint.mdAndUp"
               elevation="2"
               outlined
               shaped
@@ -30,6 +31,46 @@
             </v-card-subtitle>
 
             <iframe width="560" height="315" :src="'https://www.youtube.com/embed/' + marker.snippet.resourceId.videoId" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+            <v-card-actions>
+              <v-btn color="red" text @click="marker.visible = false">
+                Close
+              </v-btn>
+
+              <v-spacer></v-spacer>
+
+              <v-btn icon @click="show = !show">
+                <v-icon>{{ show ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
+              </v-btn>
+            </v-card-actions>
+
+            <v-expand-transition>
+              <div v-show="show">
+                <v-divider></v-divider>
+
+                <v-card-text style="overflow-wrap:normal">
+                  {{ marker.snippet.description }}
+                </v-card-text>
+              </div>
+            </v-expand-transition>
+          </v-card>
+
+          <v-card
+              v-show="$vuetify.breakpoint.mobile && !$vuetify.breakpoint.mdAndUp"
+              elevation="2"
+              outlined
+              shaped
+              style="width:100vw;">
+
+            <v-card-title>
+              {{ marker.snippet.title }}
+            </v-card-title>
+
+            <v-card-subtitle>
+              {{ convertDate(marker.snippet.publishedAt) }}
+            </v-card-subtitle>
+
+            <iframe width="100%" height="315" :src="'https://www.youtube.com/embed/' + marker.snippet.resourceId.videoId" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
             <v-card-actions>
               <v-btn color="red" text @click="marker.visible = false">
