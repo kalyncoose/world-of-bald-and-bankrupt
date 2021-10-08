@@ -8,7 +8,7 @@
     >
       <span style="margin-right:5px;">Made with</span>
       <v-icon style="color:red;">mdi-heart</v-icon>
-      <span style="margin-left:5px;">by <u>Kalyn</u></span>
+      <span style="margin-left:5px;">by <u>Kalyn C.</u></span>
     </v-system-bar>
 
     <v-system-bar
@@ -40,17 +40,17 @@
         ></v-img>
       </template>
 
-      <v-list-item style="max-width:30%;margin:auto;">
+      <v-list-item style="max-width:30%;margin:auto;" @click="openYT">
         <v-list-item-avatar>
           <v-img
               class="elevation-6"
               alt=""
-              src="https://yt3.ggpht.com/ytc/AAUvwng0J8dnyjFIL2Ppu68MaztExk427GuIgZ8OuTiwBA=s88-c-k-c0x00ffffff-no-rj"
+              src="./assets/logo.jpg"
           ></v-img>
         </v-list-item-avatar>
 
         <v-list-item-content>
-          <v-list-item-title><b>bald and bankrupt &middot;</b> 2.67M subscribers</v-list-item-title>
+          <v-list-item-title><b>bald and bankrupt</b></v-list-item-title>
         </v-list-item-content>
       </v-list-item>
 
@@ -70,7 +70,7 @@
         </v-btn>
 
         <v-btn icon @click="openAMZ">
-          <v-icon>mdi-amazon</v-icon>
+          <v-icon>mdi-book-open-variant</v-icon>
         </v-btn>
       </div>
     </v-app-bar>

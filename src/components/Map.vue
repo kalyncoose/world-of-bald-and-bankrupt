@@ -92,7 +92,7 @@ export default {
       rotation: 0,
       clickCoord: undefined,
       marker: 'https://i.ibb.co/fnV6t3t/bald-marker.png',
-      markerOutlined: 'https://i.ibb.co/1GvXSnX/bald-marker-outlined.png',
+      markerOutlined: 'https://i.ibb.co/JtDTKN6/bald-marker-black-outline.png', // 'https://i.ibb.co/1GvXSnX/bald-marker-outlined.png',
       markers: items
     }
   },
