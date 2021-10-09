@@ -5,6 +5,7 @@
         color="dark"
         style="z-index:999;bottom:0;left:0;position:fixed;opacity:70%;"
         @click="openGH"
+        v-if="$vuetify.breakpoint.mdAndUp"
     >
       <span style="margin-right:5px;">Made with</span>
       <v-icon style="color:red;">mdi-heart</v-icon>
@@ -15,7 +16,7 @@
         dark
         color="dark"
         style="z-index:999;bottom:0;right:0;position:fixed;opacity:70%;"
-        v-show="$vuetify.breakpoint.mdAndUp"
+        v-if="$vuetify.breakpoint.mdAndUp"
     >
       <span style="margin-right:5px;">Using</span>
       <v-icon>mdi-wrench</v-icon>
