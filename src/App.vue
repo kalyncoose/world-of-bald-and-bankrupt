@@ -24,16 +24,12 @@
     </v-system-bar>
 
     <v-app-bar
-        absolute
+        fixed
         color="#ff0000"
         dark
         dense
-        shrink-on-scroll
         prominent
         src="./assets/banner.png"
-        fade-img-on-scroll
-        scroll-target="#scrolling-techniques-5"
-        scroll-threshold="500"
     >
       <template v-slot:img="{ props }">
         <v-img

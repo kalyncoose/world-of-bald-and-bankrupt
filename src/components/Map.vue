@@ -3,7 +3,7 @@
     <div id="modal" v-if="showModal">
       <v-card
           elevation="0"
-          style="margin:100px 0px 5px 0px;"
+          style="margin:100px 0px 100px 0px;"
         >
 
         <v-card-title>
