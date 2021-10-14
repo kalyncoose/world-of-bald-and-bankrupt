@@ -4,6 +4,166 @@
     "geometry": {
       "type": "Point",
       "coordinates": [
+        58.01467610133746,
+        56.223745484400254
+      ]
+    },
+    "snippet": {
+      "publishedAt": "2021-10-07T12:13:16Z",
+      "title": "Inside Perm 36: The Last Gulag",
+      "description": "🇷🇺 Under Stalin the G.U.LAG ( Main Administration of Camps ) system spread out across what was the former Soviet Union, swallowing up citizens and foreigners from all corners of the empire. Ukrainians, Estonians, Kyrgyz etc. were taken from their homes and sent north in box cars to the camps to work away their stretches. Millions passed through the camps and many never returned home. Those camps have long been dismantled or converted into regular factories and work places and you'd be hard pressed to know that you were visiting a former camp. However Perm 36 logging camp has been preserved and so I travelled to the very edge of Europe to a village called Kutchino to visit the last Gulag and to see how the prisoners lived.",
+      "position": 226,
+      "resourceId": {
+        "kind": "youtube#video",
+        "videoId": "uDH_o8RqR0Y"
+      }
+    }
+  },
+  {
+    "visible": false,
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        59.93826604254066,
+        30.209088474362066
+      ]
+    },
+    "snippet": {
+      "publishedAt": "2021-10-05T14:59:34Z",
+      "title": "Solo On The World's Longest Train Journey 🇷🇺",
+      "description": "🇷🇺The Trans-Siberian train, who hasn't dreamt of taking it across this leviathan of a country? Well not me to be honest but somehow I decided to override my dread of endless train rides to show you what nobody has shown you before. The real Trans-Siberian. This isn't a package tour, nothing is booked in advance. It's just me on my own hopping from town to town on whichever train is leaving next, meeting locals, drinking vodka, avoiding snorers, exploring Russia. Join me!",
+      "position": 225,
+      "resourceId": {
+        "kind": "youtube#video",
+        "videoId": "kVB20yiNCPE"
+      }
+    }
+  },
+  {
+    "visible": false,
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        49.81584986107959,
+        31.78194141444035
+      ]
+    },
+    "snippet": {
+      "publishedAt": "2021-08-29T08:42:34Z",
+      "title": "Looking For Love In A Ukrainian Village ( Isn't Easy ) 🇺🇦",
+      "description": "🇺🇦 We all want to find that special someone, the person who will accept us and love us despite our madness and idiosyncrasies. We all hope that that person is out there somewhere waiting to be found. And so when myself and Johnny met a woman on a provincial bus journey who told us of the mythical village of Sofiivka, a place supposedly full of fair village maidens all searching for husbands, we decided that we would have to travel there and investigate for ourselves to see if we could find true love. Get ready for the feel good movie of the year...\n\nSubscribe to romantic Johnny here: https://www.youtube.com/user/JohnnyJ3N",
+      "position": 224,
+      "resourceId": {
+        "kind": "youtube#video",
+        "videoId": "RPUsuDTnnFM"
+      }
+    }
+  },
+  {
+    "visible": false,
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        50.070675683448464,
+        31.463155932237548
+      ]
+    },
+    "snippet": {
+      "publishedAt": "2021-08-23T02:13:52Z",
+      "title": "Dodgy Burgers And Gopnik Dogs In Ukraine 🇺🇦",
+      "description": "🇺🇦 Greetings from beautiful Ukraine. Myself and my bodyguard Johhny FD left the capitol city Kyiv on a provincial adventure to the town of Pereyaslav in search of a Soviet Cosmic church I had tried and failed to visit last winter. On the way we learnt some more about this great country, for example: to always avoid Burger City, how not to serenade babushkas and that even dogs have bad reputations and are banned from shopping at some places. Join us on a trip to what might actually be Ukraine's friendliest little town, Pereyaslav.\n\nThe first video about Pereyaslav from the winter can be found here: https://www.youtube.com/watch?v=ETHMzJmgz1k\n\nJohhny FD channel is here: https://www.youtube.com/user/JohnnyJ3N",
+      "position": 223,
+      "resourceId": {
+        "kind": "youtube#video",
+        "videoId": "VlEdku1-1gA"
+      }
+    }
+  },
+  {
+    "visible": false,
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        47.9100379390206,
+        33.352092259040376
+      ]
+    },
+    "snippet": {
+      "publishedAt": "2021-08-10T14:54:04Z",
+      "title": "Ukraine's Frustratingly Long City: Kryvyi Rih 🇺🇦",
+      "description": "🇺🇦 Doing the simplest of tasks like popping to the shop for a loaf of bread is no simple thing in Kryvyi Rih. That's because it's seemingly the longest city in the bloody world and going anywhere takes a bloody eternity and ends in sweaty frustration. However I was on a mission to seek out its Soviet past so I stopped complaining and set off on an adventure in search of an old dude with a Lada. Join me as we go back in time to good old Kryvyi Rig, Ukraine's most frustrating city.\n\nCheck out my other channel 'Daily Bald' for shorter videos.",
+      "position": 222,
+      "resourceId": {
+        "kind": "youtube#video",
+        "videoId": "StvRgJBCaks"
+      }
+    }
+  },
+  {
+    "visible": false,
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        49.95089286463367,
+        36.38052575881666
+      ]
+    },
+    "snippet": {
+      "publishedAt": "2021-08-05T20:31:12Z",
+      "title": "KhTZ: Ukraine's Most Dangerous Hood 🇺🇦",
+      "description": "🇺🇦 I hadn't been in Kharkiv very long before I started hearing about the dodgy gopnik filled suburb called KhTZ ( Kharkiv Tractor Plant ). None of the people I spoke to had actually been but they all told me stories of a region known for its fights and muggings. Well I decided to go check it out with my good mate Johnny. Join us both on a gopnik adventure in Ukraine's dodgiest hood.\n\nYou can follow Johnny here at his YouTube channel: https://www.youtube.com/johnnyfd",
+      "position": 221,
+      "resourceId": {
+        "kind": "youtube#video",
+        "videoId": "cgV8q0rwUzs"
+      }
+    }
+  },
+  {
+    "visible": false,
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        48.47450577508501,
+        35.00378503445006
+      ]
+    },
+    "snippet": {
+      "publishedAt": "2021-03-08T11:56:22Z",
+      "title": "Solo Through War-Torn Donbass 🇺🇦",
+      "description": "🇺🇦 In 2014 the Ukrainian part of the Donbass erupted into war. Separatists from the Lugansk and Donetsk regions took up arms and took control of Ukrainian towns all along the eastern region of the country. Eventually they were pushed back until they controlled just the cities of Lugansk and Donetsk and some surrounding villages. I went off to visit some of the towns that the Ukrainian army had re-taken along the front lines to see how life was progressing and to hunt for the ultimate Soviet mosaic...",
+      "position": 220,
+      "resourceId": {
+        "kind": "youtube#video",
+        "videoId": "2bNzjBJF_G0"
+      }
+    }
+  },
+  {
+    "visible": false,
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        50.62175468515501,
+        26.233523261576746
+      ]
+    },
+    "snippet": {
+      "publishedAt": "2021-02-28T21:57:54Z",
+      "title": "The Ukraine You've Never Seen before 🇺🇦",
+      "description": "🇺🇦 There are plenty of videos on YouTube about Ukraine and they all show the same things; pretty churches in Kyiv, beaches in Odessa or Lviv's incredible town square. But did we really learn about the country from those generic films? I don't believe so. And so I wanted to travel off the beaten track and show you the real places and meet the real people of Ukraine away from the cliches. Oh and we will search for some Soviet mosaics too. Join me on an adventure in what may well be Europe's friendliest and least understood country.",
+      "position": 219,
+      "resourceId": {
+        "kind": "youtube#video",
+        "videoId": "quNyiLseWkg"
+      }
+    }
+  },
+  {
+    "visible": false,
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
         55.82239110760606,
         37.64673371046362
       ]
@@ -3394,8 +3554,8 @@
     "geometry": {
       "type": "Point",
       "coordinates": [
-        0,
-        0
+        59.4231111481404,
+        24.742455574728485
       ]
     }
   },
@@ -3414,8 +3574,8 @@
     "geometry": {
       "type": "Point",
       "coordinates": [
-        0,
-        0
+        40.694037675435666,
+        46.314778793727655
       ]
     }
   },
@@ -3434,8 +3594,8 @@
     "geometry": {
       "type": "Point",
       "coordinates": [
-        0,
-        0
+        24.80552414574199,
+        -107.40511949907611
       ]
     }
   },
@@ -3454,8 +3614,8 @@
     "geometry": {
       "type": "Point",
       "coordinates": [
-        0,
-        0
+        47.252354154622644,
+        39.7894237177336
       ]
     }
   },
@@ -3474,8 +3634,8 @@
     "geometry": {
       "type": "Point",
       "coordinates": [
-        0,
-        0
+        42.82470236844802,
+        73.85000274280154
       ]
     }
   },
@@ -3494,8 +3654,8 @@
     "geometry": {
       "type": "Point",
       "coordinates": [
-        0,
-        0
+        41.244635599248085,
+        72.44985575408037
       ]
     }
   },
@@ -3514,8 +3674,8 @@
     "geometry": {
       "type": "Point",
       "coordinates": [
-        0,
-        0
+        42.87413752815878,
+        74.58125893537185
       ]
     }
   },
@@ -3534,8 +3694,8 @@
     "geometry": {
       "type": "Point",
       "coordinates": [
-        0,
-        0
+        23.390875630003706,
+        -106.31644591116414
       ]
     }
   },
@@ -3554,8 +3714,8 @@
     "geometry": {
       "type": "Point",
       "coordinates": [
-        0,
-        0
+        21.558073795508324,
+        -104.91786924845077
       ]
     }
   },
@@ -3574,8 +3734,8 @@
     "geometry": {
       "type": "Point",
       "coordinates": [
-        0,
-        0
+        19.315202470126202,
+        -99.63286382618463
       ]
     }
   },
@@ -3594,8 +3754,8 @@
     "geometry": {
       "type": "Point",
       "coordinates": [
-        0,
-        0
+        19.447290560408653,
+        -99.13095837589475
       ]
     }
   },
@@ -3614,8 +3774,8 @@
     "geometry": {
       "type": "Point",
       "coordinates": [
-        0,
-        0
+        19.411811596873044,
+        -99.12504993732098
       ]
     }
   },
@@ -3634,8 +3794,8 @@
     "geometry": {
       "type": "Point",
       "coordinates": [
-        0,
-        0
+        50.06671818135694,
+        14.419563081013546
       ]
     }
   },
@@ -3654,8 +3814,8 @@
     "geometry": {
       "type": "Point",
       "coordinates": [
-        0,
-        0
+        40.46093458624226,
+        19.488458552351577
       ]
     }
   },
@@ -3674,8 +3834,8 @@
     "geometry": {
       "type": "Point",
       "coordinates": [
-        0,
-        0
+        41.34051207802869,
+        19.794271767529477
       ]
     }
   },
@@ -3694,8 +3854,8 @@
     "geometry": {
       "type": "Point",
       "coordinates": [
-        0,
-        0
+        50.046044971599734,
+        14.413256483113663
       ]
     }
   },
@@ -3714,8 +3874,8 @@
     "geometry": {
       "type": "Point",
       "coordinates": [
-        0,
-        0
+        53.13264640026444,
+        30.798236646838937
       ]
     }
   },
@@ -3734,8 +3894,8 @@
     "geometry": {
       "type": "Point",
       "coordinates": [
-        0,
-        0
+        54.33473132273525,
+        27.943799529507498
       ]
     }
   },
@@ -3754,8 +3914,8 @@
     "geometry": {
       "type": "Point",
       "coordinates": [
-        0,
-        0
+        53.90696456364901,
+        27.542519012602646
       ]
     }
   },
@@ -3774,8 +3934,8 @@
     "geometry": {
       "type": "Point",
       "coordinates": [
-        0,
-        0
+        53.90613768090004,
+        27.534012182682023
       ]
     }
   },
@@ -3794,8 +3954,8 @@
     "geometry": {
       "type": "Point",
       "coordinates": [
-        0,
-        0
+        53.89168750508535,
+        27.540552073465392
       ]
     }
   },
@@ -3814,8 +3974,8 @@
     "geometry": {
       "type": "Point",
       "coordinates": [
-        0,
-        0
+        40.14602145942325,
+        44.398271904121096
       ]
     }
   },
@@ -3834,8 +3994,8 @@
     "geometry": {
       "type": "Point",
       "coordinates": [
-        0,
-        0
+        40.794086601929166,
+        43.83542744195937
       ]
     }
   },
@@ -3854,8 +4014,8 @@
     "geometry": {
       "type": "Point",
       "coordinates": [
-        0,
-        0
+        41.53450407957749,
+        45.040959408181834
       ]
     }
   },
@@ -3874,8 +4034,8 @@
     "geometry": {
       "type": "Point",
       "coordinates": [
-        0,
-        0
+        23.126032703970445,
+        -81.28908862802682
       ]
     }
   },
@@ -3894,8 +4054,8 @@
     "geometry": {
       "type": "Point",
       "coordinates": [
-        0,
-        0
+        20.960817114966396,
+        -76.96848262197312
       ]
     }
   },
@@ -3914,8 +4074,8 @@
     "geometry": {
       "type": "Point",
       "coordinates": [
-        0,
-        0
+        21.38467554596313,
+        -77.92482529957618
       ]
     }
   },
@@ -3934,8 +4094,8 @@
     "geometry": {
       "type": "Point",
       "coordinates": [
-        0,
-        0
+        22.58480944459019,
+        -80.24173735694488
       ]
     }
   },
@@ -3954,8 +4114,8 @@
     "geometry": {
       "type": "Point",
       "coordinates": [
-        0,
-        0
+        23.03981682037056,
+        -81.21044212480828
       ]
     }
   },
